@@ -1,0 +1,124 @@
+import React,{useState} from 'react';
+import {Link} from "react-router-dom";
+import {AppBar, Toolbar, ListItem, ListItemIcon, IconButton, ListItemText, Avatar, Divider, List, Typography, Box} from "@material-ui/core"
+import {MenuOpen,FavoriteBorder, GitHub, AssignmentInd, Home, BorderColor, ContactMail, Loyalty} from "@material-ui/icons";
+import { makeStyles } from '@material-ui/core/styles';
+import avatar1 from "../avatar1.jpg";
+import MobilRightMenuSlider from "@material-ui/core/Drawer";
+import Footer from "./Footer";
+
+//css style 
+const useStyles =makeStyles(theme =>({
+    menuSliderContainer: {
+        width: 250,
+        background: "#282c34",
+        height: "100%",
+      
+    },
+    avatar:{
+        display: "block",
+        margin: "0.5rem auto",
+        width: theme.spacing(14),
+        height:theme.spacing(14)
+    },
+    colorResmue:{
+        color:"white"
+    },
+    colorIconResmue:{
+        color:"#61dafb"
+    },
+    gitHubLink:{
+        flex:"1",
+    }
+}));
+
+const menuItems = [
+    {
+        listIcon: <Home />,
+        listText: "Home",
+        listPath: "/"
+    },
+    {
+        listIcon: <AssignmentInd />,
+        listText: "Resume Project",
+        listPath: "/my-resume"
+    },
+
+    {
+        listIcon: <BorderColor />,
+        listText: "My target",
+        listPath: "/my-target"
+    },
+
+    {
+        listIcon: <ContactMail />,
+        listText: "Contacts",
+        listPath:"/contacts"
+    },
+    {
+        listIcon: <Loyalty />,
+        listText: "Love Status ",
+        listPath:"/A-lone"
+    }
+]
+
+const Navbar = () => {
+    const[state,setState] = useState({
+        right: false
+    })
+
+    const toggleSlider = (slider,open) =>() =>{
+        setState({...state, [slider]:open})
+    }
+
+    
+
+    const classes = useStyles();
+
+    const sideList = slider => (
+        <Box className={classes.menuSliderContainer} component="div" onClick ={toggleSlider(slider, false)}>
+        <Avatar className={classes.avatar} src ={avatar1} alt="NT Vinh Nguyen"/>
+        <Divider />
+        <List>
+            {menuItems.map((lsItem,key)=>(
+                <ListItem button key={key} className ={classes.colorResmue} component ={Link} to ={lsItem.listPath}>
+                <ListItemIcon className={classes.colorIconResmue}> {lsItem.listIcon}</ListItemIcon>   
+                <ListItemText primary ={lsItem.listText}/>
+                </ListItem>
+            ))}
+        </List>
+        </Box>
+    )
+    return (
+        <>
+        <Box component="nav" >
+            <AppBar position ="fixed" style ={{background:"#20232a"}}>
+                <Toolbar >
+                    <IconButton style={{color:"#61dafb"}} onClick ={toggleSlider("right",true)}>
+                         <MenuOpen style={{color:"#61dafb",fontSize:"40px"}} />
+                    </IconButton>  
+                    <Toolbar className ={classes.gitHubLink}>
+                    <Typography  variant="h6" style={{color:"#f8f8f8"}}>
+                             <span style={{color:"#00e49a"}}> Vinh </span>R<span  style={{color:"#00e49a"}}>e̳</span>sum<span  style={{color:"#00e49a"}}>e̳</span>
+                    </Typography>  
+                    <FavoriteBorder  style={{color:"#61dafb",marginLeft:"5px"}} />       
+                    </Toolbar>                               
+                         <MobilRightMenuSlider 
+                                anchor="right" 
+                                open={state.right}
+                                onClose={toggleSlider("right",false)}
+                          >{sideList("right")}
+                          <Footer/>
+                          </MobilRightMenuSlider>  
+                             <IconButton href="https://github.com/devntv?tab=projects" target="_blank">
+                                        <GitHub  style={{color:"white"}}/>
+                                        {/* <a href="http://vinhwork.000webhostapp.com" target="_blank"></a> */}
+                            </IconButton>                                   
+                </Toolbar>                  
+            </AppBar>          
+        </Box>
+        </>
+    )
+}
+
+export default Navbar
