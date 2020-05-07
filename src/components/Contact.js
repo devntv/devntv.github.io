@@ -66,7 +66,9 @@ const Contact = () => {
                      <InputField
                         fullWidth={true} label= "phone" variant="outlined" inputProps={{style:{color:"white"}}} margin="dense" size="medium"
                     />
-                    <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>}>
+                    <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon/>} onClick={() => {
+                              alert("thank so much- but I never received it :((.");
+                            }}>
                         contact me
                     </Button>
                 </Box>

@@ -57,8 +57,8 @@ const menuItems = [
     },
     {
         listIcon: <Loyalty />,
-        listText: "Love Status ",
-        listPath:"/A-lone"
+        listText: "Introduce ",
+        listPath:"/I-troduce"
     }
 ]
 
@@ -110,7 +110,7 @@ const Navbar = () => {
                           >{sideList("right")}
                           <Footer/>
                           </MobilRightMenuSlider>  
-                             <IconButton href="https://github.com/devntv?tab=projects" target="_blank">
+                             <IconButton href="https://github.com/devntv" target="_blank">
                                         <GitHub  style={{color:"white"}}/>
                                         {/* <a href="http://vinhwork.000webhostapp.com" target="_blank"></a> */}
                             </IconButton>                                   

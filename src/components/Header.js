@@ -54,7 +54,7 @@ const Header = () => {
                     'Hello and have a good month 💙',
                     'Hello and have a good year 💚',
                     'Hello and have a good next year 💛',
-                    'And',
+                    'AND',
                     'Happy Lucking or have a good life 💕']}
                     typeSpeed={40}
                     backSpeed={50}   

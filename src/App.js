@@ -15,7 +15,7 @@ function App() {
       <Route path="/my-resume" component={Resume}/>
       <Route path="/my-target" component={Portfolio}/>
       <Route path="/contacts" component={Contact}/>
-      <Route path="/A-lone" component={Alone}/>
+      <Route path="/I-troduce" component={Alone}/>
     </>
   );
 }
