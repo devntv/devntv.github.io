@@ -2,7 +2,7 @@
   
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://devntv.github.io/dinhresume",
+  "homepage":"https://devntv.github.io/devntv.github.io",
   "dependencies": {
     "@material-ui/core": "^4.9.12",
     "@material-ui/icons": "^4.9.1",

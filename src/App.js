@@ -9,16 +9,16 @@ import Alone from "./components/Alone"
 import Contact from "./components/Contact"
 function App() {
   return (
-    <>
-    <Router>
+    <div>
+   <Router>
     <CssBaseline />
       <Route exact path="/" component={Home}/>
       <Route path="/my-resume" component={Resume}/>
       <Route path="/my-target" component={Portfolio}/>
       <Route path="/contacts" component={Contact}/>
-      <Route path="/I-troduce" component={Alone}/>
-      </Router>
-    </>
+      <Route path="/I-troduce" component={Alone}/> 
+   </Router>
+   </div>
   );
 }
 

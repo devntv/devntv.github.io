@@ -72,7 +72,7 @@ const Navbar = () => {
     }
 
     
-
+////////////////////////////////
     const classes = useStyles();
 
     const sideList = slider => (
