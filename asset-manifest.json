@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/devntv.github.io/static/css/main.9323182c.chunk.css",
+    "main.js": "/devntv.github.io/static/js/main.b923c7a7.chunk.js",
+    "main.js.map": "/devntv.github.io/static/js/main.b923c7a7.chunk.js.map",
+    "runtime-main.js": "/devntv.github.io/static/js/runtime-main.e549858d.js",
+    "runtime-main.js.map": "/devntv.github.io/static/js/runtime-main.e549858d.js.map",
+    "static/js/2.ffa49f67.chunk.js": "/devntv.github.io/static/js/2.ffa49f67.chunk.js",
+    "static/js/2.ffa49f67.chunk.js.map": "/devntv.github.io/static/js/2.ffa49f67.chunk.js.map",
+    "index.html": "/devntv.github.io/index.html",
+    "precache-manifest.763b2a983832d86a033713ba46bfaafb.js": "/devntv.github.io/precache-manifest.763b2a983832d86a033713ba46bfaafb.js",
+    "service-worker.js": "/devntv.github.io/service-worker.js",
+    "static/css/main.9323182c.chunk.css.map": "/devntv.github.io/static/css/main.9323182c.chunk.css.map",
+    "static/js/2.ffa49f67.chunk.js.LICENSE.txt": "/devntv.github.io/static/js/2.ffa49f67.chunk.js.LICENSE.txt",
+    "static/media/avatar1.jpg": "/devntv.github.io/static/media/avatar1.fce168e6.jpg",
+    "static/media/App.css": "/devntv.github.io/static/media/w1.20862f7e.jpg",
+    "static/media/html-css-javascript-lg.jpg": "/devntv.github.io/static/media/html-css-javascript-lg.54fd4234.jpg",
+    "static/media/javascript-fullstack.jpg": "/devntv.github.io/static/media/javascript-fullstack.730958a2.jpg",
+    "static/media/mern-stack.jpg": "/devntv.github.io/static/media/mern-stack.90616a5d.jpg",
+    "static/media/react-redux.jpg": "/devntv.github.io/static/media/react-redux.a8b012a0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e549858d.js",
+    "static/js/2.ffa49f67.chunk.js",
+    "static/css/main.9323182c.chunk.css",
+    "static/js/main.b923c7a7.chunk.js"
+  ]
+}
