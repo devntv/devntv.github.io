@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from "react-router-dom"
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import CssBaseline from '@material-ui/core/CssBaseline';
 import './App.css';
 import Home from './components';
@@ -10,12 +10,14 @@ import Contact from "./components/Contact"
 function App() {
   return (
     <>
+    <Router>
     <CssBaseline />
       <Route exact path="/" component={Home}/>
       <Route path="/my-resume" component={Resume}/>
       <Route path="/my-target" component={Portfolio}/>
       <Route path="/contacts" component={Contact}/>
       <Route path="/I-troduce" component={Alone}/>
+      </Router>
     </>
   );
 }
